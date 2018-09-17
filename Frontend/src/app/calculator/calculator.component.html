@@ -1,0 +1,21 @@
+<table>
+  <tr>
+    <td>
+      <input type="text" [(ngModel)]="dto.number1" />
+    </td>
+    <td>
+      <select [(ngModel)]="dto.calculationType">
+        <option value="+">Plus</option>
+        <option value="-">Minus</option>
+        <option value="*">Keer</option>
+        <option value="/">Delendoor</option>
+      </select>
+    </td>
+    <td>
+      <input type="text" [(ngModel)]="dto.number2" />
+    </td>
+    <td>
+      <button (click)="calculate()">=</button> &nbsp; {{amount}}
+    </td>
+  </tr> 
+</table>
